@@ -200,10 +200,12 @@ In power query editore finding the total values having USD as currency.
 In MySQL Workbench find that there are duplicates of USD and INR
 
  `SELECT count(*) from sales.transactions where sales.transactions.currency="INR\r";` 
- `150000 - can't removed as it is large amount`
+ 
+ 150000 - can't removed as it is large amount
 
  `SELECT count(*) from sales.transactions where sales.transactions.currency="INR";` 
- `279 - we can remove it as it is small record and can be considered as bad data`
+ 
+ 279 - we can remove it as it is small record and can be considered as bad data
 
  `SELECT count(*) from sales.transactions where sales.transactions.currency="USD\r";` 
 
